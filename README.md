@@ -1,4 +1,4 @@
-# Install # 
+# Install #
 
 `bower install angular.analytics`
 
