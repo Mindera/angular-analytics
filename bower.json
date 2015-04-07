@@ -14,7 +14,7 @@
     "Mindera"
   ],
   "description": "Angular integration with Google Analytics and Google Tag Manager",
-  "main": "dist/angularAnalytics.js",
+  "main": "dist/scripts/angularAnalytics.js",
   "license": "MIT",
   "ignore": [
     "app",
