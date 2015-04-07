@@ -1,4 +1,9 @@
 # Features #
+
+###Install
+
+`bower install angular.analytics`
+
 ##Generic features##
 
 ###Configure angular-analytics on your App###
@@ -7,38 +12,9 @@ Define your dependency on your app
 - angularAnalytics.gaq (optional)
 - angularAnalytics.gtm (optional)
 
-
-    angular
-    .module('angularAnalyticsApp', [
-        'ngResource',
-        'ngRoute',
-        'angularAnalytics.base',
-        'angularAnalytics.gaq',
-        //'angularAnalytics.gtm',
-        'analyticsconfig'
-    ])
-    .config(['$routeProvider', '$analyticsProvider', 'ANALYTICS.CONFIG', function ($routeProvider, $analyticsProvider, $analyticsconfig) {
-        $routeProvider
-            .when('/', {
-                templateUrl: 'views/main.html',
-                controller: 'MainCtrl'
-            })
-            .when('/about', {
-                            templateUrl: 'views/about.html',
-                            controller: 'AboutCtrl'
-                        })
-            .otherwise({
-                redirectTo: '/'
-            });
-
-        $analyticsProvider.setupAccount('UA-XXXXXXXX-1', 'none');
-        $analyticsProvider.setAdditionalParameters($analyticsconfig);
-    }]);
-    
 ###Pageview according to product : country : device : page ###
-```
-$analyticsProvider.setupAccount('UA-XXXXXXXX-1', 'none');
-```
+
+`$analyticsProvider.setupAccount('UA-XXXXXXXX-1', 'none');`
 
 ```
 $analyticsProvider.setAdditionalParameters({
