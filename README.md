@@ -1,10 +1,8 @@
-# Features #
-
-###Install
+# Install # 
 
 `bower install angular.analytics`
 
-##Generic features##
+# Features #
 
 ###Configure angular-analytics on your App###
 Define your dependency on your app
@@ -92,10 +90,10 @@ Just inject the **$analytics** dependency and these methods
     });    
 
 
-##Google Analytics##
+###Google Analytics###
 - The app needs to setup the accountID and Additional values for Pageview
 
-##Google Tag Manager##
+###Google Tag Manager###
 - The app needs to add the Additional values for Pageview
 - Custom variables are not yet implemented
 - Tracked events are: _trackPageview and _trackEvent
@@ -103,7 +101,7 @@ Just inject the **$analytics** dependency and these methods
 
 # Checkout and run #
 
-    $ git clone https://yconoclast@bitbucket.org/mindera/angular-analytics.git
+    $ git clone https://github.com/Mindera/angular.analytics.git
 
     $ npm install
 
