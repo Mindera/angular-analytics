@@ -18,7 +18,8 @@ module.exports = function (grunt) {
     // Configurable paths for the application
     var appConfig = {
         app: require('./bower.json').appPath || 'app',
-        dist: 'dist'
+        dist: 'dist',
+        component: 'component'
     };
 
     // Define the configuration for all the tasks
@@ -143,6 +144,16 @@ module.exports = function (grunt) {
                         '.tmp',
                         '<%= yeoman.dist %>/{,*/}*',
                         '!<%= yeoman.dist %>/.git{,*/}*'
+                    ]
+                }]
+            },
+            component: {
+                files: [{
+                    dot: true,
+                    src: [
+                        '.tmp',
+                        '<%= yeoman.component %>/{,*/}*',
+                        '!<%= yeoman.component %>/.git{,*/}*'
                     ]
                 }]
             },
@@ -357,6 +368,17 @@ module.exports = function (grunt) {
                     dest: '<%= yeoman.dist %>'
                 }]
             },
+            component: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.dist %>/scripts',
+                    dest: '<%= yeoman.component %>',
+                    src: [
+                        'angular.analytics.js'
+                    ]
+                }]    
+            },
             styles: {
                 expand: true,
                 cwd: '<%= yeoman.app %>/styles',
@@ -429,6 +451,12 @@ module.exports = function (grunt) {
         'filerev',
         'usemin',
         'htmlmin'
+    ]);
+    
+    grunt.registerTask('build-component', [
+        'build',
+        'clean:component',
+        'copy:component'
     ]);
 
     grunt.registerTask('default', [
