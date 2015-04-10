@@ -10,11 +10,9 @@
  */
 angular
     .module('angularAnalyticsApp', [
-        'ngResource',
         'ngRoute',
         'angularAnalytics.base',
         'angularAnalytics.gaq',
-//        'angularAnalytics.gtm',
         'analyticsconfig'
     ])
     .config(['$routeProvider', '$analyticsProvider', 'ANALYTICS.CONFIG', function ($routeProvider, $analyticsProvider, $analyticsconfig) {

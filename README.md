@@ -8,7 +8,6 @@
 Define your dependency on your app
 - angularAnalytics.base (required)
 - angularAnalytics.gaq (optional)
-- angularAnalytics.gtm (optional)
 
 ###Pageview according to product : country : device : page ###
 
@@ -92,11 +91,6 @@ Just inject the **$analytics** dependency and these methods
 
 ###Google Analytics###
 - The app needs to setup the accountID and Additional values for Pageview
-
-###Google Tag Manager###
-- The app needs to add the Additional values for Pageview
-- Custom variables are not yet implemented
-- Tracked events are: _trackPageview and _trackEvent
 
 
 # Checkout and run #

@@ -5,6 +5,8 @@
 
     angular.module('angularAnalytics.gaq', ['angularAnalytics.base'])
         .config(['$analyticsProvider', function ($analyticsProvider) {
+            
+            //Define accountId and domain
             $analyticsProvider.setupAccount(function (accountInfo) {
                 window._gaq = window._gaq || [];
                 

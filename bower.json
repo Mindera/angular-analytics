@@ -1,19 +1,15 @@
 {
   "name": "angular.analytics",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "dependencies": {
     "angular": "^1.3.0",
     "angular-route": "^1.3.0"
-  },
-  "devDependencies": {
-    "bootstrap": "^3.2.0",
-    "angular-mocks": "~1.2.0"
   },
   "appPath": "app",
   "authors": [
     "Mindera"
   ],
-  "description": "Angular integration with Google Analytics and Google Tag Manager",
+  "description": "AngularJS integration with Google Analytics",
   "main": "component/angular.analytics.js",
   "license": "MIT",
   "ignore": [
