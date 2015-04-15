@@ -105,7 +105,6 @@
     }).run(['$rootScope', '$location', '$analytics', '$injector', function ($rootScope, $location, $analytics, $injector) {
         var sendBeacon = true;
 
-        console.log("test");
         //Setup key and domain for GAQ
         $analytics.setupAccount($analytics.accountInfo);
 
