@@ -54,12 +54,7 @@
                     angular.forEach(aAttributes, function (attr) {
                         prefix += attr + ':';
                     });
-                    //http://cordova.apache.org/docs/en/2.4.0/cordova_device_device.md.html#device.platform
-                    if (window.device && window.device.platform) {
-                        prefix += window.device.platform + ':';
-                    } else {
-                        prefix += 'mobile:';
-                    }
+
                     api.additionalAttributes = prefix;
                 },
 

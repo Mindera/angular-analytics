@@ -1,13 +1,13 @@
 # Install #
 
-`bower install angular.analytics`
+`bower install angular.analytics --save`
 
 # Features #
 
 ###Configure angular-analytics on your App###
 Define your dependency on your app
-- angularAnalytics.base (required)
-- angularAnalytics.gaq (optional)
+- angularAnalytics.base
+- angularAnalytics.gaq
 
 ###Pageview according to product : country : device : page ###
 
@@ -20,16 +20,10 @@ $analyticsProvider.setAdditionalParameters({
     });
 ```
 
-The device will be determined using
-```
-window.device.platform
-```
-and as a default it will be mobile.
-
 If the Url is **http://0.0.0.0:90000/#!/home/register**
 We are going to get this
 
-**angularAnalytics : pt : mobile : home : register**
+**angularAnalytics : pt : home : register**
 
 ###Track Events###
 At this moment the developer can trigger a beacon using any event ("click", "mouseout"...") and add the parameters needed.
