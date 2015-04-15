@@ -47,7 +47,7 @@
                 $get: function () {
                     return api;
                 },
-                
+
                 // Prefix that will be added on pageviews
                 setAdditionalParameters: function (aAttributes) {
                     var prefix = '';
@@ -62,7 +62,7 @@
                     }
                     api.additionalAttributes = prefix;
                 },
-                
+
                 //Set information to be passed only to GAQ
                 setAccount: function (accountId, domain) {
                     api.accountInfo = {
@@ -104,7 +104,8 @@
         return provider;
     }).run(['$rootScope', '$location', '$analytics', '$injector', function ($rootScope, $location, $analytics, $injector) {
         var sendBeacon = true;
-        
+
+        console.log("test");
         //Setup key and domain for GAQ
         $analytics.setupAccount($analytics.accountInfo);
 
